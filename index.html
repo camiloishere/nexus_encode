@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔒+- nexus -+🌌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>🔒<i>nexus encode</i>🌌</h2>
+    <p>Una herramienta para <b>esconder</b> mensajes de forma simple. <br><br> No recomendada para <b>cifrar</b> información, solo para ocultarla visualmente.</p>
+
+
+    <div style="border: 2px solid gray;">
+      <b>
+        <p>programado por <a href="https://camilo_is_here.github.io/">camilo_is_here</a></p>
+      </b>
+    </div>
+
+    <br><br>
+
+    <label for="encoder">Selecciona una versión: </label><select name="encoder" id="nexus-version">
+      <option value="v1">v1 - Predeterminada</option>
+      <option value="v2">v2 - Más segura</option>
+    </select>
+
+    <h3>ENTRADA:</h3>
+    <textarea cols="30" rows="10" id="user-input" placeholder="INGRESAR AQUÍ"></textarea><br>
+    <br><br>
+    <button id="encode">CODIFICAR</button> <button id="decode">DECODIFICAR</button>
+
+    <h3>SALIDA:</h3>
+    <textarea disabled placeholder="SALIDA AQUÍ" id="output" cols="30" rows="10"></textarea>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

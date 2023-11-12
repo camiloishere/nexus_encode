@@ -1,0 +1,79 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+h2 {
+    color: #03a9f4;
+}
+
+p {
+    color: #b0bec5;
+}
+
+div {
+    background-color: #892be21b;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #8a2be2; 
+    max-width: 425px;
+    margin: 0px auto;
+}
+
+a {
+    color: #8a2be2;
+}
+
+textarea {
+    background-color: #263238;
+    color: #ffffff;
+    border: 1px solid #03a9f4; /* Cambia el borde verde por azul neón */
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+select {
+    background-color: #003b56;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 0 10px #03a9f4; /* Agrega una iluminación azul neón */
+}
+
+
+
+button {
+    background-color: rgba(0, 128, 255, 0.5);;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    box-shadow: 0 0 10px rgba(0, 128, 255, 0.5); /* Agrega una iluminación azul neón */
+}
+
+button:hover {
+    background-color: rgba(0, 128, 255, 0.5);;
+}
+
+h3 {
+    color: #03a9f4;
+    margin-top: 20px;
+}
+
+#output {
+    background-color: #263238;
+    color: #ffffff;
+    border: 1px solid #03a9f4; /* Cambia el borde verde por azul neón */
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
