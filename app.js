@@ -1,28 +1,28 @@
-import * as nexus from "./encoders/nexus_encode.js"
+import * as fast_encoder from "./encoders/fast_encoder.js"
 
 document.querySelector("#encode").addEventListener("click", () => {
     let text = document.querySelector("#user-input").value
-    const nexusVersion = document.querySelector("#nexus-version").value || "v1"
+    const encoderVersion = document.querySelector("#encoder-version").value || "v1"
 
-    switch (nexusVersion){
+    switch (encoderVersion){
       case "v1":
-        document.querySelector("#output").value = nexus.encode(text)
+        document.querySelector("#output").value = fast_encoder.encode(text)
         break;
       case "v2":
-        document.querySelector("#output").value = nexus.encode_v2(text)
+        document.querySelector("#output").value = fast_encoder.encode_v2(text)
         break;
     }
 })
 document.querySelector("#decode").addEventListener("click", () => {
     let text = document.querySelector("#user-input").value
-    const nexusVersion = document.querySelector("#nexus-version").value || "v1"
+    const encoderVersion = document.querySelector("#encoder-version").value || "v1"
 
-    switch (nexusVersion){
+    switch (encoderVersion){
       case "v1":
-        document.querySelector("#output").value = nexus.decode(text)
+        document.querySelector("#output").value = fast_encoder.decode(text)
         break;
       case "v2":
-        document.querySelector("#output").value = nexus.decode_v2(text)
+        document.querySelector("#output").value = fast_encoder.decode_v2(text)
         break;
     }
 })
